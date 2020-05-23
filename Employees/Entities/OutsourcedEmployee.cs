@@ -18,7 +18,7 @@ namespace Employees.Entities
         }
         public sealed override double Payment()
         {
-            return base.Payment()*1.1;
+            return base.Payment()+(AdditionalCharge*1.1);
         }
     }
 }
